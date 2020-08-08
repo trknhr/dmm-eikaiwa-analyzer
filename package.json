@@ -1,0 +1,21 @@
+{
+  "name": "dmm-eikaiwa-analyzer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dmm-eikaiwa && node github-heatmap"
+  },
+  "peerDependencies": {
+    "puppeteer": "^5.2.1"
+  },
+  "dependencies": {
+    "d3": "^5.16.0",
+    "jsdom": "^16.3.0",
+    "puppeteer": "^5.2.1",
+    "puppeteer-core": "^5.2.1",
+    "puppeteer-extra": "^3.1.13",
+    "puppeteer-extra-plugin-stealth": "^2.5.0",
+    "user-agents": "^1.0.559"
+  }
+}

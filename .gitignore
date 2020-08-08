@@ -1,0 +1,5 @@
+userDataDir
+node_modules
+
+*.png
+mylessonHist.json
