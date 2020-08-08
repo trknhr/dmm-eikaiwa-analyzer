@@ -6,9 +6,6 @@
   "scripts": {
     "start": "node dmm-eikaiwa && node github-like-heatmap"
   },
-  "peerDependencies": {
-    "puppeteer": "^5.2.1"
-  },
   "dependencies": {
     "d3": "^5.16.0",
     "jsdom": "^16.3.0",
