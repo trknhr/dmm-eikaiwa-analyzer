@@ -24,5 +24,6 @@ yarn start
 
 例:
 
+![example](https://github.com/1984weed/dmm-eikaiwa-analyzer/blob/images/dmm-eikaiwa-analytics.png)
 
 大量のリクエストが発生するため少しリクエストの間隔を空けています。そのため実行から画像の出力には10分程度かかります。

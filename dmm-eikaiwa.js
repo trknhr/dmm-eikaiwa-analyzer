@@ -24,7 +24,6 @@ async function main() {
         headless: true,
         slowMo: 10,
         defaultViewport: null,
-        userDataDir: "./userDataDir"
     });
     let [result, error] = await getUserData(browser, latestMonth);
 
@@ -106,7 +105,7 @@ async function getUserData(browser, latestMonth) {
             for (const m of allMonthsDom) {
                 if (
                     latestM == null ||
-                    parseInt(latestM) >= parseInt(m.value)
+                    parseInt(m.value) >= parseInt(latestM)
                 ) {
                     allMonths.push(m.value);
                 }

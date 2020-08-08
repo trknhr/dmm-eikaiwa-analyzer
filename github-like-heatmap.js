@@ -28,8 +28,8 @@ global.document = dom.window.document;
 function draw(sample) {
     const svg = d3.select("#cal-heatmap");
     const dateValues = sample.map((dv) => ({
-        date: d3.timeDay(new Date(dv.Date)),
-        value: Number(dv.AnswerCount),
+        date: d3.timeDay(new Date(dv.date)),
+        value: Number(dv.lessonCount),
     }));
 
     const dateMap = {};
@@ -166,8 +166,8 @@ async function main() {
             return [
                 ...[...new Set(a.lessons.map((b) => b.date))].map((b) => {
                     return {
-                        Date: b,
-                        AnswerCount: a.lessons.filter((c) => c.date === b)
+                        date: b,
+                        lessonCount: a.lessons.filter((c) => c.date === b)
                             .length,
                     };
                 }),

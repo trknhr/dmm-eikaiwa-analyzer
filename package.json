@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node dmm-eikaiwa && node github-heatmap"
+    "start": "node dmm-eikaiwa && node github-like-heatmap"
   },
   "peerDependencies": {
     "puppeteer": "^5.2.1"
